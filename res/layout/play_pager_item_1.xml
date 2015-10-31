@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/play_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+    
+    <zjn.ui.CDView
+        android:layout_marginBottom="0dp"
+        android:id="@+id/play_cdview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    
+    <zjn.ui.LrcView
+        xmlns:lrc="http://schemas.android.com/apk/res/zjn.mymusic"
+        android:id="@+id/play_first_lrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        lrc:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        lrc:normalTextColor="@android:color/white"
+        lrc:currentTextColor="@android:color/white"
+        lrc:dividerHeight="0dp"
+        lrc:rows="1" />
+
+</LinearLayout>
